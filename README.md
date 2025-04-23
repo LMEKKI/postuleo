@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/briefcase.svg" width="24" height="24" alt="Postuleo"> Postuleo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Postuleo** est une application gratuite conçue pour vous aider à gérer efficacement vos candidatures.
 
-Currently, two official plugins are available:
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/zap.svg" width="20" height="20" alt="Fonctionnalités"> Fonctionnalités Actuelles
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/file-text.svg" width="16" height="16" alt="Gestion"> **Gestion des Candidatures**  
+  Suivez toutes vos candidatures en un seul endroit.
 
-## Expanding the ESLint configuration
+- <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/activity.svg" width="16" height="16" alt="Suivi"> **Suivi du Statut**  
+  Visualisez l'avancement (en cours, relancée, acceptée...).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/edit.svg" width="16" height="16" alt="Notes"> **Prise de Notes**  
+  Ajoutez des commentaires pour chaque entreprise.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/clock.svg" width="20" height="20" alt="À venir"> Fonctionnalités à Venir
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/paperclip.svg" width="16" height="16" alt="Documents"> **Gestion des Documents**  
+  Stockez CV et lettres de motivation.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- <img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/users.svg" width="16" height="16" alt="Entretiens"> **Préparation aux Entretiens**  
+  Guides pratiques pour vos entretiens.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+<img src="https://raw.githubusercontent.com/feathericons/feather/master/icons/star.svg" width="14" height="14" alt="Star"> *Simple • Gratuit • Efficace*  
+Postuleo vous accompagne dans votre recherche d'emploi.
