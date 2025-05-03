@@ -1,0 +1,43 @@
+:root {
+	--pico-border-radius: 0.25rem;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	gap: var(--pico-spacing);
+
+	.login-options {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: var(--pico-spacing-sm);
+		border: none;
+		padding: 0;
+		margin: var(--pico-form-element-spacing-vertical) 0;
+	}
+
+	/* Version mobile */
+	@media (max-width: 576px) {
+		.login-options {
+			flex-direction: column;
+			align-items: stretch;
+			gap: var(--pico-spacing-sm);
+		}
+	}
+}
+
+.social-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0.625rem;
+
+	button {
+		border-radius: var(--pico-border-radius) !important;
+	}
+}

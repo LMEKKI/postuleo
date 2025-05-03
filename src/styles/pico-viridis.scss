@@ -1,0 +1,75 @@
+// pico-viridis.scss
+// Palette Viridis (WCAG AA/AAA compliant)
+:root {
+	[data-theme="light"] {
+		// Couleurs de base
+		--pico-primary: #440154; // Violet profond (contrast ≥ 4.5:1)
+		--pico-primary-hover: #3a0d4a;
+		--pico-primary-background: #440154;
+
+		--pico-secondary: #31688e; // Bleu-vert
+		--pico-secondary-hover: #2a5a7a;
+
+		--pico-contrast: #0d0d0d; // Noir pour contraste max
+
+		// Couleurs fonctionnelles
+		--pico-text-selection-color: rgba(35, 139, 69, 0.25); // Viridis vert
+		--pico-form-element-active-border-color: #35b779; // Vert moyen
+
+		// Arrière-plans
+		--pico-background-color: #f8f9fa; // Gris très clair
+		--pico-card-background-color: #ffffff;
+
+		// Texte
+		--pico-color: #222222;
+		--pico-muted-color: #5f5f5f;
+
+		// Spécifiques Viridis
+		--viridis-1: #440154; // Violet
+		--viridis-2: #31688e; // Bleu
+		--viridis-3: #35b779; // Vert
+		--viridis-4: #fde725; // Jaune (usage limité)
+	}
+
+	// Mode sombre
+	[data-theme="dark"] {
+		--pico-primary: #35b779; // Vert Viridis (meilleure lisibilité sombre)
+		--pico-primary-hover: #3adc8c;
+		--pico-primary-background: #2d9665;
+
+		--pico-secondary: #31688e;
+		--pico-secondary-hover: #3a7ca8;
+
+		--pico-background-color: #121212;
+		--pico-color: #e0e0e0;
+		--pico-muted-color: #aaaaaa;
+
+		// Correction contrastes
+		--pico-h1-color: #ffffff;
+		--pico-form-element-color: #f0f0f0;
+	}
+
+	// Application systématique
+	:root {
+		// Hiérarchie typographique
+		--pico-h1-color: var(--pico-primary);
+		--pico-h2-color: var(--pico-secondary);
+
+		// Composants
+		--pico-card-border-color: var(--pico-secondary);
+		--pico-form-element-focus-color: var(--viridis-3);
+
+		// États
+		--pico-form-element-valid-border-color: var(--viridis-3);
+		--pico-form-element-invalid-border-color: #e34a33; // Rouge accessible
+	}
+
+	// Vérification contrastes
+	@media (prefers-contrast: more) {
+		:root {
+			--pico-primary: #30003a; // Violet plus foncé
+			--pico-color: #000000;
+			--pico-background-color: #ffffff;
+		}
+	}
+}
