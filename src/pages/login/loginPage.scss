@@ -12,11 +12,7 @@
 	.login-options {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
 		gap: var(--pico-spacing-sm);
-		border: none;
-		padding: 0;
 		margin: var(--pico-form-element-spacing-vertical) 0;
 	}
 
